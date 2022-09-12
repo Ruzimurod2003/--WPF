@@ -1,0 +1,50 @@
+﻿<Window x:Class="FirstProject.Windows.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FirstProject.Windows"
+        mc:Ignorable="d"
+        Title="Register" Height="810" Width="945" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="Sign up for MyProject" Name="label1" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center">
+
+        </Label>
+        <Label Content="FullName" Name="label2" Grid.Column="0" Grid.Row="1"/>
+        <Label Content="Password" Name="label3" Grid.Column="0" Grid.Row="2"/>
+        <Label Content="Email" Name="label4" Grid.Column="0" Grid.Row="3"/>
+        <Label Content="Image" Name="label5" Grid.Column="0" Grid.Row="4"/>
+        <Label Content="Department" Name="label6" Grid.Column="0" Grid.Row="5"/>
+        <Label Content="Birth" Name="label7" Grid.Column="0" Grid.Row="6"/>
+
+        <TextBox Name="NameText" Grid.Column="1" Grid.Row="1"/>
+        <TextBox Name="PasswordText" Grid.Column="1" Grid.Row="2"/>
+        <TextBox Name="EmailText" Grid.Column="1" Grid.Row="3"/>
+        <!--Image ni shu yerda qo'shamiz-->
+        <Button x:Name="btnOpenFile" Grid.Column="1" Grid.Row="4" Click="btnOpenFile_Click" Content="Open file" />
+        <Image x:Name="PersonImage" Grid.Column="2" Grid.RowSpan="3" Grid.Row="1"/>
+        <ComboBox Name="DepartmentCombo" Grid.Column="1" Grid.Row="5"/>
+        <!--Bu yerda tug'ilgan sanani kiritadi-->
+        <DatePicker Name="BirthDate" Grid.Column="1" Grid.Row="6"/>
+
+        <Button Name="Add" Content="Add" Grid.Column="0" Grid.Row="7" Click="Add_Click"/>
+        <Button Name="Update" Content="Update" Grid.Column="1" Grid.Row="7"/>
+        <Button Name="Delete" Content="Delete" Grid.Column="2" Grid.Row="7"/>
+    </Grid>
+</Window>
